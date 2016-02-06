@@ -4,26 +4,27 @@
 	<title>TV Place</title>
 	<meta charset="UTF-8">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div id="app-container">
-		<header>
+		<header id="app-header">
 			<h1>TV Place</h1>
 		</header>
 		<section id="app-body">
-			<div class="tv-shows">
-				<article class="tv-show">
-					<div class="left">
-						<img src="http://tvmazecdn.com/uploads/images/medium_portrait/41/104633.jpg">
-					</div>
-					<div class="left info">
-						<h1></h1>
-						<p></p>
-					</div>
-				</article>
-			</div>
-		</section>
+			<form class="search-form">
+				<input type="text">
+		        <button type="submit">Buscar</button>
+	    	</form>
+	    	<div class="tv-shows">
+	        	<div class="loader"></div>
+	    	</div>
+	    </section>
+	    <footer id="app-footer">
+	    	<p>HTML5 - CSS3 - Jquery</p>
+	    </footer>
 	</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
