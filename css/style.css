@@ -97,6 +97,7 @@ body{
 	background: #34415D;
 	color: #7CD3C8;
 	font-size: 16px;
+	font-weight: bold;
 }
 
 #app-header .search-form span.input-group-btn{

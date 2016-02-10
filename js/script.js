@@ -21,7 +21,7 @@ $(function(){
 
 	/* Search Input */
 
-	$('#app-body')
+	$('#app-header')
 		.find('form')
     .submit(function (ev) {
       ev.preventDefault();
