@@ -19,9 +19,10 @@ body{
 #app-header h1{
     color: #fff;
     text-align: center;
-    font-size: 32px;
+    font-size: 34px;
     vertical-align: middle;
     margin: 0;
+    padding-left: 12%;
 }
 
 #app-header h1.danger {
@@ -103,15 +104,18 @@ body{
 	float: left;
 }
 
+#app-header .search-form span button{
+	font-weight: bold;
+}
+
 #app-header .superior{
 	float: left;
-	padding-left: 13%;
 }
 
 #app-nav nav ul{
   margin-bottom: 1%;
   background: #1F2738;
-  height: 32px;
+  height: 36px;
   margin: 0px;
 }
 
@@ -125,7 +129,8 @@ body{
 #app-nav nav ul li a{
   display: block;
   text-decoration: none;
-  color: #7CD3C8
+  color: #7CD3C8;
+  padding-top: 17%;
 }
 
 .loader {

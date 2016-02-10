@@ -50,7 +50,7 @@ $(function(){
             '<img src=":img:" alt=":img alt:">' +
           '</div>' +
           '<div class="right info">' +
-            '<h1>:name:</h1>' +
+            '<h2>:name:</h2>' +
             '<p>:summary:</p>' +
           '</div>' +
         '</article>';
