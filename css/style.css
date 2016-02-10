@@ -10,15 +10,16 @@ body{
 }
 
 #app-header{
-	background: #E9E9E5;
+	background: #34415D;
 	width: 100%;
-	padding-top: 20px;
+	padding: 4% 0 0.5% 0;
+
 }
 
 #app-header h1{
-    color: #989797;
+    color: #fff;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     vertical-align: middle;
     margin: 0;
 }
@@ -28,7 +29,7 @@ body{
 }
 
 #app-body {
-  padding-top: 10vh;
+  padding-top:8vh;
   width: 80%;
   margin: 0 auto;
   min-height: 75vh;
@@ -79,7 +80,7 @@ body{
   float: right;
 }
 
-#app-body .search-form {
+#app-header .search-form {
   width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -87,20 +88,44 @@ body{
   font-size: 22px;
 }
 
-#app-body .search-form input[type="text"] {
+#app-header .search-form input[type="text"] {
   padding: 8px 10px;
   border-color: #7CD3C8;
   border-radius: 6px;
-  width: 300px;
+  width: 50%;
 	background: #34415D;
 	color: #7CD3C8;
 	font-size: 16px;
 }
 
-#app-body .search-form div button{
+#app-header .search-form span.input-group-btn{
 	font-size: 13px;
-	height: 21px;
-	width: 20%;
+	float: left;
+}
+
+#app-header .superior{
+	float: left;
+	padding-left: 13%;
+}
+
+#app-nav nav ul{
+  margin-bottom: 1%;
+  background: #1F2738;
+  height: 32px;
+  margin: 0px;
+}
+
+#app-nav nav ul li{
+  text-decoration: none;
+  float: left;
+  padding: 0 6%;
+  height: 100%;
+}
+
+#app-nav nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #7CD3C8
 }
 
 .loader {

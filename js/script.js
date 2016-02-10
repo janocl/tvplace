@@ -35,7 +35,7 @@ $(function(){
 			$.ajax({
 				url: 'http://api.tvmaze.com/search/shows',
 				data: { q: busqueda },
-				success: function (res, textStatus, xhr) {
+				success: function (res, status, xhr) {
 					$loader.remove();
 					var shows = $.map(res, function (el) {
 						return el.show;
@@ -54,6 +54,7 @@ $(function(){
             '<p>:summary:</p>' +
           '</div>' +
         '</article>';
+
   if (!localStorage.shows) {
     $.ajax('http://api.tvmaze.com/shows')
       .then(function (shows) {
