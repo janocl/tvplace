@@ -14,6 +14,7 @@ $(function(){
       var $article = $(article)
       $article.hide();
       $tvShowsContainer.append($article.show());
+
     })
   }
 
@@ -27,18 +28,18 @@ $(function(){
       var busqueda = $(this)
         .find('input[type="text"]')
         .val();
+
 			$tvShowsContainer.find('.tv-show').remove()
 			var $loader = $('<div class="loader">');
 			$loader.appendTo($tvShowsContainer);
 			$.ajax({
-				url: 'http://api.tvmaze.com/shows',
+				url: 'http://api.tvmaze.com/search/shows',
 				data: { q: busqueda },
 				success: function (res, textStatus, xhr) {
 					$loader.remove();
-					var shows = res.map(function (el) {
+					var shows = $.map(res, function (el) {
 						return el.show;
 					})
-
 					renderShows(shows);          
 				}
 			})
@@ -53,7 +54,16 @@ $(function(){
             '<p>:summary:</p>' +
           '</div>' +
         '</article>';
-
+  if (!localStorage.shows) {
+    $.ajax('http://api.tvmaze.com/shows')
+      .then(function (shows) {
+        $tvShowsContainer.find('.loader').remove();
+        localStorage.shows = JSON.stringify(shows);
+        renderShows(shows);
+      })
+  } else {
+    renderShows(JSON.parse(localStorage.shows));
+  }
 
 
 })
