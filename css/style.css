@@ -128,12 +128,27 @@ body{
   width: 15%;
 }
 
+#app-nav nav ul li:hover{
+	background: #34415D;
+  transition: .5s;
+  -webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
 #app-nav nav ul li a{
   display: block;
   text-decoration: none;
   color: #7CD3C8;
   padding-top: 3%;
   font-weight: bold;
+}
+
+#app-nav nav ul li a:hover{
+	color: #fff;
 }
 
 .loader {
