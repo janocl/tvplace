@@ -145,6 +145,7 @@ body{
   color: #7CD3C8;
   padding-top: 3%;
   font-weight: bold;
+  height: 100%;
 }
 
 #app-nav nav ul li a:hover{
