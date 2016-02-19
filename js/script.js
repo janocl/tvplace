@@ -10,7 +10,7 @@ $(function(){
         .replace(':img:', show.image ? show.image.medium : '')
         .replace(':summary:', show.summary)
         .replace(':img alt:', show.name + " Logo")
-
+      console.log(show);
       var $article = $(article)
       $article.hide();
       $tvShowsContainer.append($article.show());
